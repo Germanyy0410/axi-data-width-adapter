@@ -1,0 +1,7 @@
+sim/.visualizer
+sim/upsizer/
+sim/sysinfo.log
+sim/visualizer.log
+.dvt/
+.vscode/
+dvt_build.log
