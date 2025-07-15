@@ -1,0 +1,183 @@
+<!-- THIS IS TOOL GENERATED SESSION FILE. PLEASE DO NOT MODIFY THIS -->
+<!DOCTYPE visualizer_session>
+<session version="3" skip_do_file="0">
+ <app argc="7">
+  <argv pos="0" value="visualizer"/>
+  <argv pos="1" value="-designfile"/>
+  <argv pos="2" value="D:\VLSI\Width_Adapter\sim\upsizer\upsizer.bin"/>
+  <argv pos="3" value="-wavefile"/>
+  <argv pos="4" value="D:\VLSI\Width_Adapter\sim\upsizer\upsizer.db"/>
+  <argv pos="5" value="-do"/>
+  <argv pos="6" value="D:/VLSI/Width_Adapter/sim/Wave0Reload.do"/>
+ </app>
+ <window_config>
+  <dockareas left="326" top="858" bottom="557" right="463"/>
+  <taborder left="structure+" bottom="transcript+wave+" right="variables+"/>
+  <activetab left="structure" bottom="wave" activewindow="structure" right="variables"/>
+  <window dock_location="left" height="792" x="0" undocked="0" width="1110" y="0" type="structure" visible="1"/>
+  <window dock_location="right" height="340" x="0" undocked="0" width="418" y="74" type="variables" visible="1"/>
+  <window dock_location="bottom" height="152" x="0" undocked="0" width="1520" y="0" type="transcript" visible="1"/>
+  <window dock_location="bottom" height="804" x="-1" undocked="0" width="1532" y="-23" type="wave" visible="1"/>
+  <window dock_location="bottom" id="1" height="610" x="136" undocked="0" width="1076" y="445" type="wave" visible="0"/>
+  <window height="907" x="-1" undocked="0" width="1536" y="-6" type="rtl" visible="1"/>
+  <window dock_location="left" x="0" undocked="0" y="0" type="testbench" visible="0"/>
+  <window dock_location="center" x="0" firstVisibleLine="237" undocked="0" y="0" path="D:/VLSI/Width_Adapter/tb/upsizer_tb.sv" type="source" visible="1"/>
+  <window dock_location="bottom" height="300" x="160" undocked="1" width="1100" y="380" type="search" visible="0"/>
+  <window dock_location="right" x="0" undocked="0" y="0" type="drvrecadv" visible="0"/>
+  <window dock_location="right" height="245" x="448" undocked="0" width="258" y="222" type="generallist" visible="0"/>
+  <window dock_location="right" x="0" undocked="0" y="0" type="schematic" visible="0"/>
+  <window dock_location="right" x="0" undocked="0" y="0" type="stdproperty" visible="0"/>
+ </window_config>
+ <wave_file_mgr>
+  <waveFile tagName="F0" fileName="D:\VLSI\Width_Adapter\sim\upsizer\upsizer.db" waveType="0"/>
+ </wave_file_mgr>
+ <gui>
+  <main_window visible="1">
+   <srcbrowser filepath="D:/VLSI/Width_Adapter/tb/upsizer_tb.sv" primary="true" value_annotation_mode="true" instancename="upsizer_tb"/>
+   <sourcetclcommands>
+    <tcl command="src activate source"/>
+    <tcl command="src top 238"/>
+   </sourcetclcommands>
+   <edge_gui cur_selection="AnyEdge"/>
+  </main_window>
+  <watchTower_cur_setting customDisplayTimeUnitListStr="" curActiveWaveFile="F0" curRadix="8" curDisplayTimeUnit="-12" curDisplayTimeUnitStr="1ps">
+   <curTime lowtime="40000" hightime="0"/>
+  </watchTower_cur_setting>
+  <structure selection="upsizer_tb"/>
+  <variables CA="0" UPF="0" VA="0"/>
+  <transcript/>
+  <wave name="Wave0">
+   <timeunit value="14"/>
+   <frequnit value="2"/>
+   <showdiff value="0"/>
+  </wave>
+ </gui>
+ <wave_mgr sync_time_range="1">
+  <waveWindow snapToEdge="1" value_tooltip="0" showSecCursor="1" wintype="4" displayFileTag="1" trackViewToTime="1" displayGlobalView="1" swapRepresentationOfX="0" displayTimeUnitStr="1ps" justifySignalPath="Right" nameWidth="153" displayGrid="0" displayRadixWithValue="1" displayLeadingZeros="1" displayScopeName="0" showMarkers="1" displayTimeUnit="-12" alignBaseName="0" primNudge="1" signalHeight="21" valueWidth="136" secNudge="1" waveWidth="1204">
+   <window name="Wave0">
+    <timeunit value="14"/>
+    <frequnit value="2"/>
+    <showdiff value="0"/>
+   </window>
+   <viewPort>
+    <beginTime lowtime="0" hightime="0"/>
+    <endTime lowtime="240000" hightime="0"/>
+    <beginViewTime lowtime="0" hightime="0"/>
+    <endViewTime lowtime="240000" hightime="0"/>
+    <beginLastViewTime lowtime="0" hightime="0"/>
+    <endLastViewTime lowtime="240000" hightime="0"/>
+   </viewPort>
+   <primCursor lowtime="233464" hightime="0"/>
+   <secCursor lowtime="48997" hightime="0"/>
+   <wavetclcommands>
+    <tcl command="wave update off"/>
+    <tcl command="wave clearselection"/>
+    <tcl commandblock="custom radix definitions"></tcl>
+    <tcl command="wave update off"/>
+    <tcl command="wave zoom range 0 240000"/>
+    <tcl command="wave add upsizer_tb.dut.u_aw_channel.aclk -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave group {AW CHANNEL} -backgroundcolor #004466"/>
+    <tcl command="wave group {AW CHANNEL:Master} -backgroundcolor #006666"/>
+    <tcl command="wave add -group {AW CHANNEL:Master} upsizer_tb.dut.u_aw_channel.m_awaddr -tag F0 -radix decimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {AW CHANNEL:Master} upsizer_tb.dut.u_aw_channel.m_awlen -tag F0 -radix decimal"/>
+    <tcl command="wave add -group {AW CHANNEL:Master} upsizer_tb.dut.u_aw_channel.m_awvalid -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {AW CHANNEL:Master} upsizer_tb.dut.u_aw_channel.m_awready -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave spacer -group {AW CHANNEL} {}"/>
+    <tcl command="wave group {AW CHANNEL:Internal} -backgroundcolor #666600"/>
+    <tcl command="wave add -group {AW CHANNEL:Internal} upsizer_tb.dut.u_aw_channel.awaddr -tag F0 -radix decimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {AW CHANNEL:Internal} upsizer_tb.dut.u_aw_channel.total_sub_xfer_p -tag F0 -radix decimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {AW CHANNEL:Internal} upsizer_tb.dut.u_aw_channel.i_p -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {AW CHANNEL:Internal} upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_i -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {AW CHANNEL:Internal} upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o -tag F0 -radix hexadecimal -subitemconfig { {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[47]} {-radix mnemonic} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[46]} {-radix mnemonic} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[45]} {-radix mnemonic} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[44]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[43]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[42]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[41]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[40]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[39]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[38]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[37]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[36]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[35]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[34]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[33]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[32]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[31]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[30]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[29]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[28]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[27]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[26]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[25]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[24]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[23]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[22]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[21]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[20]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[19]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[18]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[17]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[16]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[15]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[14]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[13]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[12]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[11]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[10]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[9]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[8]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[7]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[6]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[5]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[4]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[3]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[2]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[1]} {-radix hexadecimal} {upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.data_o[0]} {-radix hexadecimal} } -foregroundcolor #00aa00"/>
+    <tcl command="wave group {AW CHANNEL:Internal:S_FIFO} -backgroundcolor #664400"/>
+    <tcl command="wave add -group {AW CHANNEL:Internal:S_FIFO} upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.wr_valid_i -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {AW CHANNEL:Internal:S_FIFO} upsizer_tb.dut.u_aw_channel.u_s_aw_fifo.rd_valid_i -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave spacer -group {AW CHANNEL:Internal:S_FIFO} {}"/>
+    <tcl command="wave group {AW CHANNEL:Slave} -backgroundcolor #660000"/>
+    <tcl command="wave add -group {AW CHANNEL:Slave} upsizer_tb.dut.u_aw_channel.s_awaddr -tag F0 -radix decimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {AW CHANNEL:Slave} upsizer_tb.dut.u_aw_channel.s_awlen -tag F0 -radix decimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {AW CHANNEL:Slave} upsizer_tb.dut.u_aw_channel.s_awvalid -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {AW CHANNEL:Slave} upsizer_tb.dut.u_aw_channel.s_awready -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave spacer -group {AW CHANNEL:Slave} {}"/>
+    <tcl command="wave insertion [expr [wave index insertpoint] + 1]"/>
+    <tcl command="wave group {W CHANNEL} -backgroundcolor #004466"/>
+    <tcl command="wave group {W CHANNEL:Master} -backgroundcolor #006666"/>
+    <tcl command="wave add -group {W CHANNEL:Master} upsizer_tb.dut.u_w_channel.m_wdata -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Master} upsizer_tb.dut.u_w_channel.sub_xfer_cnt -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Master} upsizer_tb.dut.u_w_channel.m_wvalid -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Master} upsizer_tb.dut.u_w_channel.m_wready -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Master} upsizer_tb.dut.u_w_channel.m_wdata -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Master} upsizer_tb.dut.u_w_channel.sub_xfer_cnt -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Master} upsizer_tb.dut.u_w_channel.m_wvalid -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Master} upsizer_tb.dut.u_w_channel.m_wready -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave group {W CHANNEL:Master:Internal} -backgroundcolor #666600"/>
+    <tcl command="wave add -group {W CHANNEL:Master:Internal} upsizer_tb.dut.u_w_channel.s_wdata_arr -tag F0 -radix decimal -expand -subitemconfig { {upsizer_tb.dut.u_w_channel.s_wdata_arr[1]} {-radix decimal -foregroundcolor #00aa00} {upsizer_tb.dut.u_w_channel.s_wdata_arr[0]} {-radix decimal -foregroundcolor #00aa00} } -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Master:Internal} upsizer_tb.dut.u_w_channel.idx -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Master:Internal} upsizer_tb.dut.u_w_channel.wr_last_sub_xfer -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Master:Internal} upsizer_tb.dut.u_w_channel.wr_last_xfer -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave group {W CHANNEL:Master:Internal:Slave} -backgroundcolor #664400"/>
+    <tcl command="wave add -group {W CHANNEL:Master:Internal:Slave} upsizer_tb.dut.u_w_channel.s_wdata -tag F0 -radix decimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Master:Internal:Slave} upsizer_tb.dut.u_w_channel.s_wvalid -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Master:Internal:Slave} upsizer_tb.dut.u_w_channel.s_wready -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave group {W CHANNEL:Master:Internal:W CHANNEL} -backgroundcolor #666600"/>
+    <tcl command="wave group {W CHANNEL:Internal} -backgroundcolor #666600"/>
+    <tcl command="wave add -group {W CHANNEL:Internal} upsizer_tb.dut.u_w_channel.s_wdata_arr -tag F0 -radix decimal -expand -subitemconfig { {upsizer_tb.dut.u_w_channel.s_wdata_arr[1]} {-radix decimal -foregroundcolor #00aa00} {upsizer_tb.dut.u_w_channel.s_wdata_arr[0]} {-radix decimal -foregroundcolor #00aa00} } -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Internal} upsizer_tb.dut.u_w_channel.idx -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Internal} upsizer_tb.dut.u_w_channel.wr_last_sub_xfer -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Internal} upsizer_tb.dut.u_w_channel.wr_last_xfer -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave group {W CHANNEL:Slave} -backgroundcolor #664400"/>
+    <tcl command="wave add -group {W CHANNEL:Slave} upsizer_tb.dut.u_w_channel.s_wdata -tag F0 -radix decimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Slave} upsizer_tb.dut.u_w_channel.s_wvalid -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave add -group {W CHANNEL:Slave} upsizer_tb.dut.u_w_channel.s_wready -tag F0 -radix hexadecimal -foregroundcolor #00aa00"/>
+    <tcl command="wave insertion [expr [wave index insertpoint] + 1]"/>
+    <tcl command="wave group {B CHANNEL} -backgroundcolor #664400"/>
+    <tcl command="wave add -group {B CHANNEL} upsizer_tb.dut.u_aw_channel.m_awid -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group {B CHANNEL} upsizer_tb.dut.u_awid.s_bid -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group {B CHANNEL} upsizer_tb.dut.u_awid.resp -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group {B CHANNEL} upsizer_tb.dut.u_awid.resp -tag F0 -radix binary"/>
+    <tcl command="wave add -group {B CHANNEL} upsizer_tb.dut.u_awid.rd_valid -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group {B CHANNEL} upsizer_tb.dut.u_awid.rd_valid_p -tag F0 -radix hexadecimal"/>
+    <tcl command="wave group {B CHANNEL:SLAVE} -backgroundcolor #660000"/>
+    <tcl command="wave add -group {B CHANNEL:SLAVE} upsizer_tb.dut.u_b_channel.s_bid -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group {B CHANNEL:SLAVE} upsizer_tb.dut.u_b_channel.s_bvalid -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group {B CHANNEL:SLAVE} upsizer_tb.dut.u_b_channel.s_bready -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group {B CHANNEL:SLAVE} upsizer_tb.dut.u_b_channel.s_bresp -tag F0 -radix binary"/>
+    <tcl command="wave add -group {B CHANNEL} upsizer_tb.dut.u_awid.resp -tag F0 -radix hexadecimal -subitemconfig { {upsizer_tb.dut.u_awid.resp[8]} {-radix hexadecimal} {upsizer_tb.dut.u_awid.resp[7]} {-radix hexadecimal} {upsizer_tb.dut.u_awid.resp[6]} {-radix hexadecimal} {upsizer_tb.dut.u_awid.resp[5]} {-radix hexadecimal} {upsizer_tb.dut.u_awid.resp[4]} {-radix hexadecimal} {upsizer_tb.dut.u_awid.resp[3]} {-radix hexadecimal} {upsizer_tb.dut.u_awid.resp[2]} {-radix hexadecimal} {upsizer_tb.dut.u_awid.resp[1]} {-radix hexadecimal} {upsizer_tb.dut.u_awid.resp[0]} {-radix hexadecimal} }"/>
+    <tcl command="wave group {B CHANNEL:MASTER} -backgroundcolor #aa5500"/>
+    <tcl command="wave add -group {B CHANNEL:MASTER} upsizer_tb.dut.u_b_channel.m_bid -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group {B CHANNEL:MASTER} upsizer_tb.dut.u_b_channel.m_bvalid -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group {B CHANNEL:MASTER} upsizer_tb.dut.u_b_channel.m_bready -tag F0 -radix hexadecimal"/>
+    <tcl command="wave add -group {B CHANNEL:MASTER} upsizer_tb.dut.u_b_channel.m_bresp -tag F0 -radix hexadecimal"/>
+    <tcl command="wave insertion [expr [wave index insertpoint] + 1]"/>
+    <tcl command="wave group {AR CHANNEL} -backgroundcolor #006666"/>
+    <tcl command="wave group {AR CHANNEL:Master} -backgroundcolor #226600"/>
+    <tcl command="wave insertion [expr [wave index insertpoint] + 1]"/>
+    <tcl command="wave group {AR CHANNEL:Internal} -backgroundcolor #666600"/>
+    <tcl command="wave insertion [expr [wave index insertpoint] + 1]"/>
+    <tcl command="wave group {AR CHANNEL:Slave} -backgroundcolor #664400"/>
+    <tcl command="wave insertion [expr [wave index insertpoint] + 1]"/>
+    <tcl command="wave insertion [expr [wave index insertpoint] + 1]"/>
+    <tcl command="wave group {R CHANNEL} -backgroundcolor #226600"/>
+    <tcl command="wave group {R CHANNEL:Slave} -backgroundcolor #666600"/>
+    <tcl command="wave insertion [expr [wave index insertpoint] + 1]"/>
+    <tcl command="wave group {R CHANNEL:Internal} -backgroundcolor #664400"/>
+    <tcl command="wave insertion [expr [wave index insertpoint] + 1]"/>
+    <tcl command="wave group {R CHANNEL:Master} -backgroundcolor #660000"/>
+    <tcl command="wave insertion [expr [wave index insertpoint] + 1]"/>
+    <tcl command="wave insertion [expr [wave index insertpoint] + 1]"/>
+    <tcl command="wave group {B CHANNEL} -collapse"/>
+    <tcl command="wave group {W CHANNEL:Master} -collapse"/>
+    <tcl command="wave group {W CHANNEL} -collapse"/>
+    <tcl command="wave group {AW CHANNEL:Internal:S_FIFO} -collapse"/>
+    <tcl command="wave group {AW CHANNEL} -collapse"/>
+    <tcl command="wave update on"/>
+    <tcl command="wave top 0"/>
+    <tcl command="wave filter settings -pattern * -leaf_name_only 1 -history {*} -signal_type 255"/>
+    <tcl command=""/>
+   </wavetclcommands>
+  </waveWindow>
+ </wave_mgr>
+ <mem_mgr/>
+ <windows/>
+ <dut selection="upsizer_tb"/>
+</session>

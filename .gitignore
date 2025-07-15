@@ -1,0 +1,11 @@
+sim/.visualizer
+sim/upsizer/
+sim/sysinfo.log
+sim/visualizer.log
+.dvt/
+.vscode/
+dvt_build.log
+sim/visualizerSave.ses
+sim/Wave0Reload.do
+sim/Wave0.do
+sim/visualizer.ses
